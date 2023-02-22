@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body class="bg-darkMode-Very-Dark-Blue(BG) dark:bg-lightMode-White(BG) font-[inter] flex justify-center items-center min-h-screen">
+
+    <div class="wrapper w-[98vw] max-w-6xl lg:w-11/12 md:10/12 mx-auto px-3">
+        <header class="py-2 mb-3 lg:flex lg:justify-between lg:items-center">
+            <div class="title py-4 border-b-[0.3px] border-b-darkMode-Desaturated-Blue-(Text) lg:border-none">
+                <h1 class="text-darkMode-white(Text) text-2xl font-bold leading-[120%] dark:text-lightMode-Very-Dark-Blue-(Text)">Social Media Dashboard</h1>
+                <p class="text-darkMode-Desaturated-Blue-(Text) text-base font-semibold dark:text-lightMode-Dark-Grayish-Blue(Text)">Total Followers: 23,004</p>
+            </div>
+    
+            <div class="mode pt-4 flex flex-row justify-between lg:justify-center lg:gap-3">
+                <p class="text-darkMode-Desaturated-Blue-(Text) text-base font-normal dark:text-lightMode-Dark-Grayish-Blue(Text)">Dark Mode</p>
+                <span id="toggle-btn" class="relative w-10 h-5 bg-toggle rounded-full before:content[''] before:absolute before:w-[40%] before:h-[80%] before:rounded-full before:bg-darkMode-Dark-Desaturated-Blue-(Card-BG) dark:before:bg-lightMode-White(BG) before:top-[10%] before:left-[5%] dark:before:left-[55%] before:transition-all before:duration-500"></span>
+            </div>
+        </header>
+
+        <div class="follows grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6 mt-4 mb-8">
+            <div class="card bg-darkMode-Dark-Desaturated-Blue-(Card-BG) dark:bg-lightMode-Light-Grayish-Blue(Card-BG) hover:bg-lightMode-Dark-Grayish-Blue(Text) dark:hover:bg-lightMode-toggle-light transition-all duration-500 py-7 border-t-[6px] border-facebook rounded-md">
+                <div class="text-center mb-5">
+                    <img class="inline mr-2" src="./images/icon-facebook.svg" alt="facebook">
+                    <span class="text-darkMode-Desaturated-Blue-(Text) dark:text-lightMode-Dark-Grayish-Blue(Text) font-semibold">@nathanf</span>
+                </div>
+                <h1 class="text-center text-darkMode-white(Text) dark:text-lightMode-Very-Dark-Blue-(Text) text-7xl font-bold mb-1">1987</h1>
+                <p class="text-center uppercase text-darkMode-Desaturated-Blue-(Text) dark:text-lightMode-Dark-Grayish-Blue(Text) text-base tracking-[0.3em]">Followers</p>
+                <div class="text-center mt-5">
+                    <img class="inline max-w-full max-h-max" src="./images/icon-up.svg" alt="icon-up">
+                    <span class="text-lime-green">12 Today</span>
+                </div>
+            </div>
+
+            <div class="card bg-darkMode-Dark-Desaturated-Blue-(Card-BG) dark:bg-lightMode-Light-Grayish-Blue(Card-BG) hover:bg-lightMode-Dark-Grayish-Blue(Text) dark:hover:bg-lightMode-toggle-light transition-all duration-500 py-7 border-t-[6px] border-twitter rounded-md">
+                <div class="text-center mb-5">
+                    <img class="inline mr-2" src="./images/icon-twitter.svg" alt="twitter">
+                    <span class="text-darkMode-Desaturated-Blue-(Text) dark:text-lightMode-Dark-Grayish-Blue(Text) font-semibold">@nathanf</span>
+                </div>
+                <h1 class="text-center text-darkMode-white(Text) dark:text-lightMode-Very-Dark-Blue-(Text) text-7xl font-bold mb-1">1044</h1>
+                <p class="text-center uppercase text-darkMode-Desaturated-Blue-(Text) dark:text-lightMode-Dark-Grayish-Blue(Text) text-base tracking-[0.3em]">Followers</p>
+                <div class="text-center mt-5">
+                    <img class="inline max-w-full max-h-max" src="./images/icon-up.svg" alt="icon-up">
+                    <span class="text-lime-green">99 Today</span>
+                </div>
+            </div>
+
+            <div class="card relative bg-darkMode-Dark-Desaturated-Blue-(Card-BG) dark:bg-lightMode-Light-Grayish-Blue(Card-BG) hover:bg-lightMode-Dark-Grayish-Blue(Text) dark:hover:bg-lightMode-toggle-light transition-all duration-500 py-7 pt-8 before:content-[''] before:absolute before:w-full before:h-[6px] before:left-0 before:top-0 before:bg-instagram overflow-hidden rounded-md">
+                <div class="text-center mb-5">
+                    <img class="inline mr-2" src="./images/icon-instagram.svg" alt="instagram">
+                    <span class="text-darkMode-Desaturated-Blue-(Text) dark:text-lightMode-Dark-Grayish-Blue(Text) font-semibold">@realnathanf</span>
+                </div>
+                <h1 class="text-center text-darkMode-white(Text) dark:text-lightMode-Very-Dark-Blue-(Text) text-7xl font-bold mb-1">11k</h1>
+                <p class="text-center uppercase text-darkMode-Desaturated-Blue-(Text) dark:text-lightMode-Dark-Grayish-Blue(Text) text-base tracking-[0.3em]">Followers</p>
+                <div class="text-center mt-5">
+                    <img class="inline max-w-full max-h-max" src="./images/icon-up.svg" alt="icon-up">
+                    <span class="text-lime-green">1099 Today</span>
+                </div>
+            </div>
+
+            <div class="card bg-darkMode-Dark-Desaturated-Blue-(Card-BG) dark:bg-lightMode-Light-Grayish-Blue(Card-BG) hover:bg-lightMode-Dark-Grayish-Blue(Text) dark:hover:bg-lightMode-toggle-light transition-all duration-500 py-7 border-t-[6px] border-youtube rounded-md">
+                <div class="text-center mb-5">
+                    <img class="inline mr-2" src="./images/icon-youtube.svg" alt="youtube">
+                    <span class="text-darkMode-Desaturated-Blue-(Text) dark:text-lightMode-Dark-Grayish-Blue(Text) font-semibold">Nathan F.</span>
+                </div>
+                <h1 class="text-center text-darkMode-white(Text) dark:text-lightMode-Very-Dark-Blue-(Text) text-7xl font-bold mb-1">8239</h1>
+                <p class="text-center uppercase text-darkMode-Desaturated-Blue-(Text) dark:text-lightMode-Dark-Grayish-Blue(Text) text-base tracking-[0.3em]">Subscribers</p>
+                <div class="text-center mt-5">
+                    <img class="inline max-w-full max-h-max" src="./images/icon-down.svg" alt="icon-down">
+                    <span class="text-bright-red">144 Today</span>
+                </div>
+            </div>
+        </div>
+        <h1 class="overview text-darkMode-white(Text) text-2xl font-bold mb-4">Overview - Today</h1>
+        <div class="activity grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6 mb-5">
+            <div class="card bg-darkMode-Dark-Desaturated-Blue-(Card-BG) hover:bg-lightMode-Dark-Grayish-Blue(Text) dark:hover:bg-lightMode-toggle-light transition-all duration-500 dark:bg-lightMode-Light-Grayish-Blue(Card-BG) py-7 px-6 rounded-md">
+                <div class="flex justify-between items-center mb-4">
+                    <p class="text-darkMode-Desaturated-Blue-(Text) dark:text-lightMode-Dark-Grayish-Blue(Text)">Page Views</p>
+                    <img class="max-w-full" src="./images/icon-facebook.svg" alt="facebook">
+                </div>
+                <div class="flex justify-between items-center">
+                    <h2 class="text-darkMode-white(Text) dark:text-lightMode-Very-Dark-Blue-(Text) text-2xl font-bold">87</h2>
+                    <div>
+                        <img class="inline max-w-full" src="./images/icon-up.svg" alt="icon-up">
+                        <span class="inline text-lime-green">3%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-darkMode-Dark-Desaturated-Blue-(Card-BG) hover:bg-lightMode-Dark-Grayish-Blue(Text) dark:hover:bg-lightMode-toggle-light transition-all duration-500 dark:bg-lightMode-Light-Grayish-Blue(Card-BG) py-7 px-6 rounded-md">
+                <div class="flex justify-between items-center mb-4">
+                    <p class="text-darkMode-Desaturated-Blue-(Text) dark:text-lightMode-Dark-Grayish-Blue(Text)">Likes</p>
+                    <img class="max-w-full" src="./images/icon-facebook.svg" alt="facebook">
+                </div>
+                <div class="flex justify-between items-center">
+                    <h2 class="text-darkMode-white(Text) dark:text-lightMode-Very-Dark-Blue-(Text) text-2xl font-bold">52</h2>
+                    <div>
+                        <img class="inline max-w-full" src="./images/icon-down.svg" alt="icon-down">
+                        <span class="inline text-bright-red">3%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-darkMode-Dark-Desaturated-Blue-(Card-BG) hover:bg-lightMode-Dark-Grayish-Blue(Text) dark:hover:bg-lightMode-toggle-light transition-all duration-500 dark:bg-lightMode-Light-Grayish-Blue(Card-BG) py-7 px-6 rounded-md">
+                <div class="flex justify-between items-center mb-4">
+                    <p class="text-darkMode-Desaturated-Blue-(Text) dark:text-lightMode-Dark-Grayish-Blue(Text)">Page Views</p>
+                    <img class="max-w-full" src="./images/icon-instagram.svg" alt="instagram">
+                </div>
+                <div class="flex justify-between items-center">
+                    <h2 class="text-darkMode-white(Text) dark:text-lightMode-Very-Dark-Blue-(Text) text-2xl font-bold">5462</h2>
+                    <div>
+                        <img class="inline max-w-full" src="./images/icon-up.svg" alt="icon-up">
+                        <span class="inline text-lime-green">2257%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-darkMode-Dark-Desaturated-Blue-(Card-BG) hover:bg-lightMode-Dark-Grayish-Blue(Text) dark:hover:bg-lightMode-toggle-light transition-all duration-500 dark:bg-lightMode-Light-Grayish-Blue(Card-BG) py-7 px-6 rounded-md">
+                <div class="flex justify-between items-center mb-4">
+                    <p class="text-darkMode-Desaturated-Blue-(Text) dark:text-lightMode-Dark-Grayish-Blue(Text)">Profile Views</p>
+                    <img class="max-w-full" src="./images/icon-instagram.svg" alt="instagram">
+                </div>
+                <div class="flex justify-between items-center">
+                    <h2 class="text-darkMode-white(Text) dark:text-lightMode-Very-Dark-Blue-(Text) text-2xl font-bold">52k</h2>
+                    <div>
+                        <img class="inline max-w-full" src="./images/icon-up.svg" alt="icon-up">
+                        <span class="inline text-lime-green">1375%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-darkMode-Dark-Desaturated-Blue-(Card-BG) hover:bg-lightMode-Dark-Grayish-Blue(Text) dark:hover:bg-lightMode-toggle-light transition-all duration-500 dark:bg-lightMode-Light-Grayish-Blue(Card-BG) py-7 px-6 rounded-md">
+                <div class="flex justify-between items-center mb-4">
+                    <p class="text-darkMode-Desaturated-Blue-(Text) dark:text-lightMode-Dark-Grayish-Blue(Text)">Retweets</p>
+                    <img class="max-w-full" src="./images/icon-twitter.svg" alt="twitter">
+                </div>
+                <div class="flex justify-between items-center">
+                    <h2 class="text-darkMode-white(Text) dark:text-lightMode-Very-Dark-Blue-(Text) text-2xl font-bold">117</h2>
+                    <div>
+                        <img class="inline max-w-full" src="./images/icon-up.svg" alt="icon-up">
+                        <span class="inline text-lime-green">303%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-darkMode-Dark-Desaturated-Blue-(Card-BG) hover:bg-lightMode-Dark-Grayish-Blue(Text) dark:hover:bg-lightMode-toggle-light transition-all duration-500 dark:bg-lightMode-Light-Grayish-Blue(Card-BG) py-7 px-6 rounded-md">
+                <div class="flex justify-between items-center mb-4">
+                    <p class="text-darkMode-Desaturated-Blue-(Text) dark:text-lightMode-Dark-Grayish-Blue(Text)">Likes</p>
+                    <img class="max-w-full" src="./images/icon-twitter.svg" alt="twitter">
+                </div>
+                <div class="flex justify-between items-center">
+                    <h2 class="text-darkMode-white(Text) dark:text-lightMode-Very-Dark-Blue-(Text) text-2xl font-bold">507</h2>
+                    <div>
+                        <img class="inline max-w-full" src="./images/icon-up.svg" alt="icon-up">
+                        <span class="inline text-lime-green">553%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-darkMode-Dark-Desaturated-Blue-(Card-BG) hover:bg-lightMode-Dark-Grayish-Blue(Text) dark:hover:bg-lightMode-toggle-light transition-all duration-500 dark:bg-lightMode-Light-Grayish-Blue(Card-BG) py-7 px-6 rounded-md">
+                <div class="flex justify-between items-center mb-4">
+                    <p class="text-darkMode-Desaturated-Blue-(Text) dark:text-lightMode-Dark-Grayish-Blue(Text)">Likes</p>
+                    <img class="max-w-full" src="./images/icon-youtube.svg" alt="youtube">
+                </div>
+                <div class="flex justify-between items-center">
+                    <h2 class="text-darkMode-white(Text) dark:text-lightMode-Very-Dark-Blue-(Text) text-2xl font-bold">107</h2>
+                    <div>
+                        <img class="inline max-w-full" src="./images/icon-down.svg" alt="icon-down">
+                        <span class="inline text-bright-red">19%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-darkMode-Dark-Desaturated-Blue-(Card-BG) hover:bg-lightMode-Dark-Grayish-Blue(Text) dark:hover:bg-lightMode-toggle-light transition-all duration-500 dark:bg-lightMode-Light-Grayish-Blue(Card-BG) py-7 px-6 rounded-md">
+                <div class="flex justify-between items-center mb-4">
+                    <p class="text-darkMode-Desaturated-Blue-(Text) dark:text-lightMode-Dark-Grayish-Blue(Text)">Total Views</p>
+                    <img class="max-w-full" src="./images/icon-youtube.svg" alt="youtube">
+                </div>
+                <div class="flex justify-between items-center">
+                    <h2 class="text-darkMode-white(Text) dark:text-lightMode-Very-Dark-Blue-(Text) text-2xl font-bold">1407</h2>
+                    <div>
+                        <img class="inline max-w-full" src="./images/icon-down.svg" alt="icon-down">
+                        <span class="inline text-bright-red">12%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script/jquery.min.js"></script>
+    <script src="./script/scrollreveal.js"></script>
+    <script src="./script/index.js"></script>
+</body>
+</html>
